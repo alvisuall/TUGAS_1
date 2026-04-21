@@ -1,0 +1,118 @@
+/* ===================== IMPORT FONT ===================== */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+/* ===================== RESET & GLOBAL ===================== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; 
+}
+
+/* ===================== HEADER ===================== */
+header {
+    background-color: #005f77; 
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* ===================== NAVIGATION ===================== */
+nav {
+    background-color: #00a2c6; 
+    position: sticky;
+    top: 0;
+    width: 100%; /* biar penuh kanan-kiri */
+    z-index: 1000;
+}
+
+nav ul {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 150px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white; 
+    font-weight: bold;
+    padding: 7px 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.607);
+    border-radius: 20px;
+    font-weight: bold;
+    color: #005f77;
+}
+
+/* ===================== LAYOUT KONTEN ===================== */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: none; 
+}
+
+main {
+    float: left;
+    width: 70%;
+    padding: 20px;
+}
+
+aside {
+    float: right;
+    width: 30%;
+    padding: 20px;
+}
+
+aside ul {
+    padding-left: 20px; 
+    margin-top: 10px;
+}
+
+aside li {
+    list-style-type: disc;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* ===================== CARD ===================== */
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h2, h3 {
+    color: #00a2c6;
+    margin-top: 0;
+}
+
+/* ===================== FOOTER ===================== */
+footer {
+    background-color: #005f77;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    clear: both; /* Menghentikan efek float */
+    font-weight: bold;
+}
+/* ===================== RESPONSIVE ===================== */
+@media screen and (max-width: 1000px) {
+    main, aside {
+        width: 100%;
+        float: none;
+    }
+}
